@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionControl : MonoBehaviour
 {
     public MoveBall moveBall;
+    public ScoreControl scoreControl;
 
     void CollisionWithRacket(Collision2D c)
     {
@@ -38,11 +39,11 @@ public class CollisionControl : MonoBehaviour
         }
         else if(collision.gameObject.name == "WallLeft")
         {
-            print("Gol");
+            this.scoreControl.GoalPlayer2();
         }
         else if(collision.gameObject.name == "WallRight")
         {
-            print("Gool");
+            this.scoreControl.GoalPlayer1();
         }
     }
 }
