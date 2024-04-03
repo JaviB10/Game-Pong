@@ -7,6 +7,9 @@ public class CollisionControl : MonoBehaviour
     public MoveBall moveBall;
     public ScoreControl scoreControl;
 
+    public GameObject racket1;
+    public GameObject racket2;
+
     void CollisionWithRacket(Collision2D c)
     {
         Vector3 positionBall = this.transform.position;
@@ -41,11 +44,15 @@ public class CollisionControl : MonoBehaviour
         {
             this.scoreControl.GoalPlayer2();
             StartCoroutine(this.moveBall.StartBall(true));
+            racket1.transform.position = new Vector3(-600, 0, 0);
+            racket2.transform.position = new Vector3(600, 0, 0);
         }
         else if(collision.gameObject.name == "WallRight")
         {
             this.scoreControl.GoalPlayer1();
             StartCoroutine(this.moveBall.StartBall(false));
+            racket1.transform.position = new Vector3(-600, 0, 0);
+            racket2.transform.position = new Vector3(600, 0, 0);
         }
     }
 }

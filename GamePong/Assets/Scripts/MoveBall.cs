@@ -66,4 +66,6 @@ public class MoveBall : MonoBehaviour
             this.hitCounter++;
         }
     }
+
+    
 }

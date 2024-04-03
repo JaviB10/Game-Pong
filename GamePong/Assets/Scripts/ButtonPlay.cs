@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonPlay : MonoBehaviour
 {
-    public void goToTheGame()
+
+    public void goToTheGameMode()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameMode");
     }
 }
