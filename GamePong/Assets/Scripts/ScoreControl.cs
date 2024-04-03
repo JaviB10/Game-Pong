@@ -14,13 +14,43 @@ public class ScoreControl : MonoBehaviour
 
     public int scoreWinner;
 
+    public GameObject titleWinner;
+    public GameObject player2;
+    public GameObject sound;
+
+    AudioSource[] audioSources;
+
+    void Start()
+    {
+        // Inicializar audioSources dentro del método Start
+        audioSources = sound.GetComponentsInChildren<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(this.scorePlayer1 >= this.scoreWinner || this.scorePlayer2 >= this.scoreWinner)
+        if(this.scorePlayer2 >= this.scoreWinner)
         {
+            if(player2.GetComponentInChildren<Text>().text == "Player Two")
+            {
+                titleWinner.GetComponentInChildren<Text>().text = "WINNER PLAYER TWO";
+                audioSources[1].enabled = true;
+            }
+            else if(player2.GetComponentInChildren<Text>().text == "CPU")
+            {
+                titleWinner.GetComponentInChildren<Text>().text = "GAME OVER";
+                audioSources[0].enabled = true;
+            }
             SceneManager.LoadScene("GameOver");
         }
+        else if(this.scorePlayer1 >= this.scoreWinner)
+        {
+            titleWinner.GetComponentInChildren<Text>().text = "WINNER PLAYER ONE";
+            audioSources[1].enabled = true;
+            SceneManager.LoadScene("GameOver");
+
+        }
+
     }
 
     private void FixedUpdate()

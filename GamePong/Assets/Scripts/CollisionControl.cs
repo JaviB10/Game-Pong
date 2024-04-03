@@ -44,15 +44,15 @@ public class CollisionControl : MonoBehaviour
         {
             this.scoreControl.GoalPlayer2();
             StartCoroutine(this.moveBall.StartBall(true));
-            racket1.transform.position = new Vector3(-600, 0, 0);
-            racket2.transform.position = new Vector3(600, 0, 0);
+            racket1.transform.localPosition = new Vector2(-600, 0);
+            racket2.transform.localPosition = new Vector2(600, 0);
         }
         else if(collision.gameObject.name == "WallRight")
         {
             this.scoreControl.GoalPlayer1();
             StartCoroutine(this.moveBall.StartBall(false));
-            racket1.transform.position = new Vector3(-600, 0, 0);
-            racket2.transform.position = new Vector3(600, 0, 0);
+            racket1.transform.localPosition = new Vector2(-600, 0);
+            racket2.transform.localPosition = new Vector2(600, 0);
         }
     }
 }

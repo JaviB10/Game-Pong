@@ -176,6 +176,9 @@ MonoBehaviour:
   scoreText1: {fileID: 1989210756}
   scoreText2: {fileID: 1932444363}
   scoreWinner: 3
+  titleWinner: {fileID: 3038166279350909043, guid: 2eca645abb39fa14db126e6872adf420, type: 3}
+  player2: {fileID: 8258608581076208332, guid: 449d2ee1069aa674cb94cf25d5eaabd5, type: 3}
+  sound: {fileID: 9054626575268061284, guid: af03c51d362badd4c9a2459782633921, type: 3}
 --- !u!114 &1212747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d576db68095d174bada8714176dc708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &99016896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1332685129296681607, guid: 6cfc522c2ebd0704fbf35fb95738c589, type: 3}
+  m_PrefabInstance: {fileID: 5544274141883708571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &127862558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +1969,7 @@ MonoBehaviour:
   moveBall: {fileID: 1631914316}
   scoreControl: {fileID: 1212746}
   racket1: {fileID: 2080380392}
-  racket2: {fileID: 0}
+  racket2: {fileID: 99016896}
 --- !u!114 &1631914320
 MonoBehaviour:
   m_ObjectHideFlags: 0
