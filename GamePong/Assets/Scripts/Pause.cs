@@ -13,7 +13,7 @@ public class Pause : MonoBehaviour
             if(Time.timeScale == 0f)
             {
                 Time.timeScale = 1f;
-                SceneManager.UnloadScene("Pause");
+                SceneManager.UnloadSceneAsync("Pause");
             }
             else
             {
