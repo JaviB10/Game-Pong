@@ -10,7 +10,7 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(Time.timeScale == 0f)
+            if (Time.timeScale == 0f)
             {
                 Time.timeScale = 1f;
                 SceneManager.UnloadSceneAsync("Pause");

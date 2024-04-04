@@ -269,8 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be8f3011be3a544a493d42679018ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racket2: {fileID: 1332685129296681607, guid: 6cfc522c2ebd0704fbf35fb95738c589, type: 3}
-  player2: {fileID: 8258608581076208332, guid: 449d2ee1069aa674cb94cf25d5eaabd5, type: 3}
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 880659570376520953, guid: 7c290cf1755fae54bb88b03e75ea57e3, type: 3}
@@ -422,8 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be8f3011be3a544a493d42679018ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racket2: {fileID: 1332685129296681607, guid: 6cfc522c2ebd0704fbf35fb95738c589, type: 3}
-  player2: {fileID: 8258608581076208332, guid: 449d2ee1069aa674cb94cf25d5eaabd5, type: 3}
 --- !u!1 &1841586638
 GameObject:
   m_ObjectHideFlags: 0
